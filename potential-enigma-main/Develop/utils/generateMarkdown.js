@@ -15,7 +15,29 @@
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  if(!data) {
+    return '';
+  }
+  return `
+    **Table of Contents**
+    - ${data.title}
+    - ${data.description}
+    - ${data.install}
+    - ${data.description}
+    - ${data.description}
+    - ${data.description}
+
+
+    **[${data.title}]**(${data.title})
+    **Purpose**
+    [${data.description}](${data.description})
+    **Instalization**
+    ${data.install}
+    **Contribution**
+    ${data.contribution}
+    **${data.userName}**
+    ## For more information contact ${data.email}
+    ## add image, website url, built, licenses
 
 `;
 }
