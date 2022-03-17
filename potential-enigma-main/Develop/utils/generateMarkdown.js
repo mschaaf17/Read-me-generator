@@ -19,18 +19,18 @@ function generateMarkdown(data) {
     return '';
   }
   return `
-    **Table of Contents**
-    - ${data.title}
-    - ${data.description}
-    - ${data.install}
+    #Table of Contents
+     #${data.title}
+     #${data.description}
+     #${data.install}
     - ${data.description}
     - ${data.description}
     - ${data.description}
 
 
-    **[${data.title}]**(${data.title})
+    [${data.title}](#${data.title})
     **Purpose**
-    [${data.description}](${data.description})
+    [${data.description}](#${data.description})
     **Instalization**
     ${data.install}
     **Contribution**
