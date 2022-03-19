@@ -45,15 +45,15 @@ function generateMarkdown(data) {
   }
   //can i return the function inside this backtick? instead of trying to recreate a write me file?
   return `
-  #License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
-  (https://opensource.org/licenses/MIT)
+  #License [![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-yellow.svg)]
+  (https://opensource.org/licenses/${data.license})
   #${data.title}
     ## Table of Contents
     - [Description](#${data.description})
     - [Installation](#${data.install})
     - [Contribution](#${data.contribution})
     - [Usage](#${data.description})
-    - [Contact Me](#${data.userName})
+    - [Contact Me](#${data.username})
 
     ## Description:
     ${data.description}
@@ -62,8 +62,8 @@ function generateMarkdown(data) {
     ## Contribution:
     ${data.contribution}
     
-    ## Contact Me:
-    ${data.userName}
+    ## GitHub Profile:
+    ${data.username}(github.com/${data.username})
     ## For more information contact ${data.email}
     ## add image, website url, built, licenses
 

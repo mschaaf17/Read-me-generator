@@ -1,23 +1,23 @@
 
-  #License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
-  (https://opensource.org/licenses/MIT)
-  #maddy
+  #License [![License: Boost_1.0](https://img.shields.io/badge/License-Boost_1.0-yellow.svg)]
+  (https://opensource.org/licenses/Boost_1.0)
+  #read me
     ## Table of Contents
-    - [Description](#maddy)
-    - [Installation](#maddy)
+    - [Description](#so great)
+    - [Installation](#git clone)
     - [Contribution](#maddy)
-    - [Usage](#maddy)
-    - [Contact Me](#undefined)
+    - [Usage](#so great)
+    - [Contact Me](#mschaaf17)
 
     ## Description:
-    maddy
+    so great
     ## Installation:
-    maddy
+    git clone
     ## Contribution:
     maddy
     
-    ## Contact Me:
-    undefined
-    ## For more information contact maddy
+    ## GitHub Profile:
+    mschaaf17(github.com/mschaaf17)
+    ## For more information contact madisonschaaf48@gmail.com
     ## add image, website url, built, licenses
 

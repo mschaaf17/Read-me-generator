@@ -45,7 +45,7 @@ return inquirer.prompt([
     {
         type: 'input',
         name: 'install',
-        message: 'How do you install this project? git clone and then npm install',
+        message: 'How do you install this project? (Ex: git clone and then npm install)',
     },
     {
         type: 'input',
@@ -75,7 +75,7 @@ return inquirer.prompt([
     }, 
     {
         type: 'input',
-        name: 'GitHub username',
+        name: 'username',
         message: 'What is your github username? (Required)',
         validate: userName => {
             if(userName) {
@@ -100,10 +100,25 @@ return inquirer.prompt([
         }
     },
     {
-        type: 'confirm',
+        type: 'list',
         name: 'license',
         message: 'Would you like to include an MIT license?',
+        choices: ['MIT', 'Apache_2.0', 'Boost_1.0', 'BSD_3--Clause', 'GPLv3', 'EPL_1.0']
+        
+    },
+    {
+        type: 'confirm',
+        name: 'confirmImage',
+        message: 'Would you like to add an image?',
         default: false
+
+    },
+    {
+        type: 'input',
+        name:'image',
+        message:'Input your link.',
+        when: ({confirmImage}) => confirmImage
+
     }
 ])
 }
