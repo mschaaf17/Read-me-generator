@@ -1,19 +1,10 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
     const inquirer = require('inquirer');
     const generateMarkdown = require('./utils/generateMarkdown')
     const fs = require('fs');
-const renderLicenseBadge = require('./utils/generateMarkdown');
-// TODO: Create an array of questions for user input
-    //what was your motivation?
-    //why did you build this project?
-    //What porblem does it solve?
-    //what did you learn?
-    //what makes your project stand out?
-    //challenges
-    //future implementation?j
 
-//questions i am adding without using the const question [] provided
 
+//array of questions for user input
 const promptUser = readMeData => {
 return inquirer.prompt([
     {
@@ -49,7 +40,7 @@ return inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'usage information',
+        name: 'usage',
         message: 'What will you use this for? (Required)',
         validate: usage => {
             if(usage) {
@@ -63,12 +54,12 @@ return inquirer.prompt([
     {
         type: 'input',
         name: 'contribution',
-        message: 'Who contributed to this project? (Required)',
+        message: 'How to contribute to this project? (Required)',
         validate: contribution => {
             if(contribution) {
                 return true;
             } else {
-                console.log('Please input who contributed to this project.');
+                console.log('Please input how to contributed to this project.');
                 return false;
             }
         }
@@ -103,42 +94,16 @@ return inquirer.prompt([
         type: 'list',
         name: 'license',
         message: 'Would you like to include an MIT license?',
-        choices: ['MIT', 'Apache_2.0', 'Boost_1.0', 'BSD_3--Clause', 'GPLv3', 'EPL_1.0']
+        choices: ['MIT', 'Apache_2.0', 'Boost_1.0', 'BSD_3--Clause', 'GPLv3', 'none']
         
-    },
-    {
-        type: 'confirm',
-        name: 'confirmImage',
-        message: 'Would you like to add an image?',
-        default: false
-
-    },
-    {
-        type: 'input',
-        name:'image',
-        message:'Input your link.',
-        when: ({confirmImage}) => confirmImage
-
     }
 ])
 }
 
 
-
-
-
-
-// check this part out at 9.3.5 also if you want to add another read me-- confirming things on 9.3.6 using when
-//const questions = [];
-
-//create the function and then call it using the promise? this write file should look the the generate site write file.
-
-// TODO: Create a function to write README file
-    //generate?    data needs to be the parameter to gather the data
-
-
+//run inquirer user questions
 promptUser()
-
+//create a readme based on the users answers
 .then(readMeData => {
     const readMePage = generateMarkdown(readMeData);
     fs.writeFile('./README.md', readMePage, err => {
@@ -146,51 +111,7 @@ promptUser()
     console.log('read me updated')
 })
 })
-// .then(licenseData => {
-//     const licenseAnswered = renderLicenseBadge(licenseData);
-//     fs.appendFile('./README.md', licenseAnswered, (err) => {
-//         if(err) throw new Error(err)
-//         console.log('everything is added to the read me')
-//     }) 
-// })
 
-//  renderLicenseBadge()
-// .then(renderLicenseLink)
-// .then(renderLicenseSection)
-// .then(renderLicenseBadge => {
-// const licenseInReadMe = generateMarkdown(renderLicenseBadge);
-// fs.appendFile('./README.md', licenseInReadMe, (err) => {
-//     if(err) throw new Error(err)
-//     console.log('everything is added to the read me')
-// }) 
-// })
-
-
-
-//THIS CODE IS WRITING TO READ ME!
-    // promptUser()
-// .then(data => {
-//     const filename = 'ReadMe.md'
-//     //function writeToFile(filename, data) {
-//         fs.writeFile(filename, JSON.stringify(data, null, '\t'), err =>
-//         err ? console.log(err): console.log('success!')
-//         )
-      
-//       })
-  //}
-
-
-//writeToFile()
-
-// TODO: Create a function to initialize app
-function init() {}
-// promptUser()
-// .then(answers => console.log(answers))
-// //writeToFile("readme.md", generateMarkdown(promptUser))
-// }
-
-// Function call to initialize app
-init();
 
 
 
