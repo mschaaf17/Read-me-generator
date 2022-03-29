@@ -2,26 +2,28 @@
 
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-#  Read Me Generator
+# Read Me Generator
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
 * [Contribution](#contribution)
 * [Usage](#usage)
+* [Test](#test)
 * [GitHub](#github-profile)
 * [Contact Me](#for-any-questions-contact)
 
 ## Description:
-A read me generator using Javascript, Node.js, npm- File System and Inquirier
-![image](https://user-images.githubusercontent.com/97362296/160641313-79d1e670-543f-4344-8c73-5e28789ff766.png)
-To view the video demonstration follow this link: https://drive.google.com/file/d/13GJLOfUHLvj5ZconHUkbJyGoUUVGhByT/view
+A read me generator using Javascript, Node.js npm- File System and Inquirer
 
 ## Usage:
-Quickly generate a read me
+To quickly generator a read me file
 ## Installation:
-Clone the code and then in the command line type npm install
+Clone the code and then run npm install
+
+## Test:
+npm test
 ## Contribution:
-Contact Madison Schaaf through the email below
+Contact Madison Schaaf, the email is provided below.
 
 ## GitHub Profile:
 [mschaaf17](https://github.com/mschaaf17)
