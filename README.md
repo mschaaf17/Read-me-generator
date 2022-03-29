@@ -13,6 +13,8 @@
 
 ## Description:
 A read me generator using Javascript, Node.js, npm- File System and Inquirier
+![image](https://user-images.githubusercontent.com/97362296/160641313-79d1e670-543f-4344-8c73-5e28789ff766.png)
+To view the video demonstration follow this link: https://drive.google.com/file/d/13GJLOfUHLvj5ZconHUkbJyGoUUVGhByT/view
 
 ## Usage:
 Quickly generate a read me
