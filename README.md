@@ -2,7 +2,7 @@
 
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Read Me Generator
+# Read me
 ## Table of Contents
 * [Description](#description:)
 * [Installation](#installation:)
@@ -12,16 +12,16 @@
 * [Contact Me](#for-any-questions-contact)
 
 ## Description:
-A read me generator using node.js
+a read me generator
 
 ## Usage:
-Quickly generate a read me
+all things read me
 ## Installation:
-Clone the code and then in the command line type npm install
+git clone and then do npm install
 ## Contribution:
-Contact Madison Schaaf through the email below
+email me
 
 ## GitHub Profile:
 [mschaaf17](https://github.com/mschaaf17)
-## For any questions contact: madisonschaaf48@gmail.com
+## For any questions contact: madisonschaaf@yahoo.com
 
