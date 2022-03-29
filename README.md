@@ -4,7 +4,7 @@
 
 # Read me
 ## Table of Contents
-* [Description](#description:)
+* [Description](#description)
 * [Installation](#installation:)
 * [Contribution](#contribution:)
 * [Usage](#Usage:)

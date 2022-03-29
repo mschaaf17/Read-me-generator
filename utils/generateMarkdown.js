@@ -38,10 +38,10 @@ return `
 ${renderLicenseBadge(data.license)}
 # ${data.title}
 ## Table of Contents
-* [Description](#description:)
-* [Installation](#installation:)
-* [Contribution](#contribution:)
-* [Usage](#Usage:)
+* [Description](#description)
+* [Installation](#installation)
+* [Contribution](#contribution)
+* [Usage](#usage)
 * [GitHub](#github-profile)
 * [Contact Me](#for-any-questions-contact)
 
