@@ -53,6 +53,19 @@ return inquirer.prompt([
     },
     {
         type: 'input',
+        name: 'test',
+        message: 'How does the user test this project? (Required)',
+        validate: test => {
+            if(test) {
+                return true;
+            } else {
+                console.log('Please explain how to test this project?');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
         name: 'contribution',
         message: 'How to contribute to this project? (Required)',
         validate: contribution => {
