@@ -42,6 +42,7 @@ ${renderLicenseBadge(data.license)}
 * [Installation](#installation)
 * [Contribution](#contribution)
 * [Usage](#usage)
+* [Test](#test)
 * [GitHub](#github-profile)
 * [Contact Me](#for-any-questions-contact)
 
@@ -52,6 +53,9 @@ ${data.description}
 ${data.usage}
 ## Installation:
 ${data.install}
+
+## Test:
+${data.test}
 ## Contribution:
 ${data.contribution}
 
